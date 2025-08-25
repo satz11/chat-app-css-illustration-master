@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f7ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      max-width: 1200px;
+      padding: 40px;
+    }
+
+    .phone {
+      width: 300px;
+      height: 600px;
+      background: white;
+      border-radius: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      overflow: hidden;
+      position: relative;
+      margin-right: 60px;
+    }
+
+    .phone-header {
+      background: linear-gradient(90deg, #a259ff, #7209b7);
+      padding: 15px;
+      color: white;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .messages {
+      padding: 15px;
+      font-size: 14px;
+    }
+
+    .bubble {
+      background: #f0f0f5;
+      padding: 10px 15px;
+      border-radius: 15px;
+      margin-bottom: 10px;
+      max-width: 80%;
+    }
+
+    .bubble.right {
+      background: #7209b7;
+      color: white;
+      margin-left: auto;
+    }
+
+    .options {
+      margin-top: 20px;
+    }
+
+    .option {
+      display: block;
+      background: linear-gradient(90deg, #a259ff, #7209b7);
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+
+    .content {
+      max-width: 500px;
+    }
+
+    .content h2 {
+      font-size: 28px;
+      color: #3a2d5f;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 16px;
+      color: #6a6a8b;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="phone">
+      <div class="phone-header">Samuel Green</div>
+      <div class="messages">
+        <div class="bubble">That sounds great. I’d be happy with that.</div>
+        <div class="bubble">Could you send over some pictures of your dog, please?</div>
+        <div class="bubble right">Here are a few pictures. She’s a happy girl 🐶</div>
+        <div class="bubble">She looks so happy! The time we discussed works. How long shall I take her out for?</div>
+
+        <div class="options">
+          <div class="option">30 minute walk - $29</div>
+          <div class="option">1 hour walk - $49</div>
+        </div>
+      </div>
+    </div>
+
+  
+    <div class="content">
+      <h2>Simple booking</h2>
+      <p>
+        Stay in touch with our dog walkers through the chat interface. This makes it easy 
+        to discuss arrangements and make bookings. Once the walk has been completed you can 
+        rate your walker and book again all through the chat.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
